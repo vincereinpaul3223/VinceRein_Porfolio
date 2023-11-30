@@ -1,0 +1,236 @@
+body {
+    background-image: url('image/BodyBackground.png');
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0; 
+}
+
+.image-background {
+    display: none;
+}
+
+
+
+:root {
+    --main-bg-color: #28282B;
+    --secondary-bg-color: rgba(27, 52, 58, 0.7);
+    --text-color: #ebe9ec;
+    --link-color: #ffffff;
+    --header-bg-image: url('image/iou.png');
+    
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: var(--text-color);
+}
+
+header {
+    padding: 0px;
+}
+
+nav,
+section,
+footer {
+    padding: 5px 0;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    background: linear-gradient(45deg, var(--main-bg-color), var(--secondary-bg-color));
+    background-image: var(--header-bg-image);
+    z-index: 1;
+}
+
+header h1,
+header p {
+    text-align: left;
+    margin: 0;
+    color: #fff;
+}
+
+nav {
+    background: var(--secondary-bg-color);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    list-style: none;
+}
+
+nav a {
+    display: inline-block;
+    padding: 5px 20px;
+    border-radius: 5px;
+    transition: background 0.3s;
+    text-decoration: none;
+    color: var(--link-color);
+}
+
+nav a:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+section {
+    text-align: left;
+    padding: 100px;
+}
+
+footer {
+    background: var(--secondary-bg-color);
+    text-align: center;
+}
+
+.project {
+    background-color: rgba(126, 205, 221, 0.7);
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: right;
+    }
+
+    nav a {
+        padding: 5px;
+        margin: 5px;
+    }
+
+    header {
+        position: sticky;
+    }
+
+    .green-text {
+        color: green;
+    }
+}
+
+@keyframes moveImage {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(50px); }
+    50% { transform: translateX(100px); }
+    75% { transform: translateX(50px); }
+    100% { transform: translateX(0); }
+}
+
+.bins {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    animation: moveImage 6s ease-in-out infinite; 
+      }
+
+section#home h1 {
+     font-size: 3em; 
+     }
+
+     section#projects h1 {
+    font-size: 3em;
+}
+
+section#about h2 {
+    font-size: 3em;
+}
+
+section#contact h2 {
+    font-size: 3em;
+}
+
+.welcome-container p {
+    font-size: 25px; 
+}
+.bio-container p {
+    font-size:25px;
+}
+
+h1 {
+    margin: 0; 
+    background: linear-gradient(to right, #3498db, #00bcd4);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-align: center; 
+}
+#about h2 {
+    text-align: center;
+  }
+  
+  #about h2 {
+    margin: 0;
+    background: linear-gradient(to right, #3498db, #00bcd4);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;  
+  }
+  #contact h2 {
+    margin: 0;
+    background: linear-gradient(to right, #3498db, #00bcd4); 
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent; 
+  }
+  
+  
+
+#home h2 {
+    font-size: 30px;
+    font-family: 'YourTribalFont', cursive;
+    letter-spacing: 3px;
+    background: -webkit-linear-gradient(#3498db, #00bcd4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;  
+   
+  }
+ 
+  
+@media (max-width: 768px) {
+    body {
+        padding: 0;
+    }
+
+    header {
+        padding: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav a {
+        padding: 10px;
+        margin: 5px;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    .project {
+        padding: 10px;
+    }
+
+    .bins {
+        animation: none; 
+    }
+
+    section#home h1,
+    section#projects h1,
+    section#about h2,
+    section#contact h2 {
+        font-size: 2em; 
+    }
+
+    .welcome-container p,
+    .bio-container p {
+        font-size: 18px; 
+    }
+}
+
+    
